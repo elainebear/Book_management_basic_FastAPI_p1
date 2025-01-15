@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "index.css">
+  
+  <title>Book Management</title>
+
+</head>
+<body>
+  <h1>Book Management</h1>
+  <form id="addBookForm">
+    <h2>Add a Book</h2>
+    <!-- <input type="number" id="bookId" placeholder="ID" required /> -->
+    <input type="text" id="bookTitle" placeholder="Title" required />
+    <input type="text" id="bookAuthor" placeholder="Author" required />
+    <input type="text" id="bookDescription" placeholder="Description" />
+    <button type="submit">Add Book</button>
+  </form>
+
+  <button onclick="fetchBooks()">Update</button>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="booksTable"></tbody>
+  </table>
+
+  <script src="index.js"></script>
+</body>
+</html>
