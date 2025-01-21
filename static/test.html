@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Book Management</title>
+        <link rel="stylesheet" href = "test.css">
+	</head>
+	<body>
+		<header>
+            <div class="container-row">
+                <div class="child">
+                    <h1> Book management</h1>
+                </div>
+                
+            </div>
+		</header>
+		<main>
+            <section> 
+                <div class="container-column">
+                    <div class="child">
+                        <h2>Add a book </h2>
+                    </div>
+                    <div class="child">
+                        <form id="addBookForm">
+                            <input type="text" id="book_title" placeholder="Title" required>
+                            <input type="text" id="book_author" placeholder="Author" required>
+                            <input type="text" id="book_description" placeholder="Description" required>
+                            <button type="submit"> Add book</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </section>
+            <button onclick="fetchBooks()">Update</button>
+            <section>
+                <div class="container-column">
+                    <div class="child">
+                        <h2>All books</h2>
+                    </div>
+                    <div class="child">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody id="booksTable"></tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+		<footer></footer>
+	</body>
+</html>
