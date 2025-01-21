@@ -88,7 +88,7 @@ table {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 5px 10px 0 0 ;
     text-overflow: ellipsis;
 }
@@ -98,12 +98,22 @@ th, td {
     padding: 5px;
     text-align: left;
     background-color: #ffffff;
-    max-height: 100px;
 
-    
+    max-height: 100px;
     overflow-y: auto;
+
+    white-space: normal; /* 讓文字換行 */
+    word-wrap: break-word; /* 遇到長單詞換行 */
+    word-break: break-all; /* 強制換行 */
     
 }
 
-
+th:nth-child(1), td:nth-child(1) {
+    width: 30px; /* 第一列寬度設為 200px */
+    text-align: center;
+}
+th:nth-child(5), td:nth-child(5) {
+    width: 100px; /* 第一列寬度設為 200px */
+    text-align: center;
+}
 
