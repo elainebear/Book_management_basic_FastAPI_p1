@@ -86,9 +86,11 @@ button {
 
 table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
+    overflow: hidden;
     margin: 5px 10px 0 0 ;
-
+    text-overflow: ellipsis;
 }
 
 th, td {
@@ -96,6 +98,11 @@ th, td {
     padding: 5px;
     text-align: left;
     background-color: #ffffff;
+    max-height: 100px;
+
+    
+    overflow-y: auto;
+    
 }
 
 
